@@ -91,7 +91,7 @@ const users = [
         password: 'x9x'},
     {name: 'Vanya',
         username: 'bob',
-        password: 'x10'},
+        password: 'x10'}
 ]
 console.log(users[0].password)
 console.log(users[1].password)
