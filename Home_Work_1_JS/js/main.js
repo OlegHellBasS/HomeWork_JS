@@ -25,9 +25,6 @@ let b = '100';
 let c = true;
 console.log(typeof a, typeof b, typeof c)
 
-// Додаткове для тих хто цікавився prompt`oм
-// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками. та вивести в консоль
-//
 let name= prompt('What is your name?','');
 let midName= prompt('middle Name?','');
 let n= Number(prompt('\n'+'How old are you?:',''));
