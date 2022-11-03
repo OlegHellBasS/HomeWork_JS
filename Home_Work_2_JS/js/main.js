@@ -14,19 +14,19 @@ console.log(element_1[9])
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 const books = [
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx'
+        title: 'Last wish',
+        pageCount: 640,
+        genre: 'Fantasy'
     },
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx'
+        title: 'The sword of destiny',
+        pageCount: 384,
+        genre: 'Fantasy'
     },
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx'
+        title: 'Elven blood',
+        pageCount: 480,
+        genre: 'Fantasy'
     }
 ]
 console.log(books)
@@ -34,64 +34,90 @@ console.log(books)
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - масив. Кожен автор має поля name,age
 const books_1 = [
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx',
-        after: {name: 'Jovani',
-            username: 'Tiger',
-            password: 1111}
+        title: 'A time of contempt',
+        pageCount: 464,
+        genre: 'fantasy',
+        after: [{
+            name: 'Andrzej',
+            username: 'Sapkowski',
+            password: 1995
+        }]
     },
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx',
-        after: {name: 'Jovani',
-            username: 'Tiger',
-            password: 1111}
+        title: 'Baptism of fire',
+        pageCount: 480,
+        genre: 'fantasy',
+        after: [{
+            name: 'Andrzej',
+            username: 'Sapkowski',
+            password: 1997
+        }]
     },
     {
-        title: 'Kamasutra',
-        pageCount: 100,
-        genre: 'xxx',
-        after: {name: 'Jovani',
-            username: 'Tiger',
-            password: 1111}
+        title: "Swallow's Tower",
+        pageCount: 448,
+        genre: 'fantasy',
+        after: [{
+            name: 'Andrzej',
+            username: 'Sapkowski',
+            password: 1997
+        }]
     }
 ]
 console.log(books_1)
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 const users = [
-    {name: 'Vanya',
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x1x'},
-    {name: 'Vanya',
+        password: 'x1x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x2x'},
-    {name: 'Vanya',
+        password: 'x2x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x3x'},
-    {name: 'Vanya',
+        password: 'x3x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x4x'},
-    {name: 'Vanya',
+        password: 'x4x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x5x'},
-    {name: 'Vanya',
+        password: 'x5x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x6x'},
-    {name: 'Vanya',
+        password: 'x6x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x7x'},
-    {name: 'Vanya',
+        password: 'x7x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x8x'},
-    {name: 'Vanya',
+        password: 'x8x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x9x'},
-    {name: 'Vanya',
+        password: 'x9x'
+    },
+    {
+        name: 'Vanya',
         username: 'bob',
-        password: 'x10'}
+        password: 'x10'
+    }
 ]
 console.log(users[0].password)
 console.log(users[1].password)
