@@ -54,7 +54,7 @@ const books_1 = [
         }]
     },
     {
-        title: "Swallow's Tower",
+        title: 'Swallow\'s Tower',
         pageCount: 448,
         genre: 'fantasy',
         after: [{
