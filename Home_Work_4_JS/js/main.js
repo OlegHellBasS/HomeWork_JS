@@ -1,3 +1,4 @@
+
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 for (let i = 0; i < 10; i++) {
     document.write(`<div>left 1</div>`)
@@ -41,11 +42,10 @@ while (x < 20) {
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-document.write(`<ul>`)
-for (const listOfItem of listOfItems) {
-    document.write(`<li>${listOfItem}</li>`)
+
+for (let listOfItem of listOfItems) {
+    document.write(`<ul><li>${listOfItem}</li></ul>`)
 }
-document.write(`</ul>`)
 
 //-------------------------------------------------------------------------------------------------------------------
 // Використовуючи данні з масиву, за допомоги document.write та циклу
