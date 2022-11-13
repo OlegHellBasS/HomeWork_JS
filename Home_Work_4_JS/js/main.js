@@ -1,27 +1,26 @@
-
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-for (let i = 0; i < 10; i++) {
-    document.write(`<div>left 1</div>`)
-}
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>left 1</div>`)
+// }
 //---------------------------------------------------------------------------------------------------------------
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-for (let i = 0; i < 10; i++) {
-    document.write(`<div>${i} left 2</div>`)
-}
+// for (let i = 0; i < 10; i++) {
+//     document.write(`<div>${i} left 2</div>`)
+// }
 //----------------------------------------------------------------------------------------------------------------
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-let i = 0;
-while (i < 20) {
-    document.write(`<div>left 3</div>`)
-    i++
-}
+// let i = 0;
+// while (i < 20) {
+//     document.write(`<div>left 3</div>`)
+//     i++
+// }
 //----------------------------------------------------------------------------------------------------------------
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-let x = 0;
-while (x < 20) {
-    document.write(`<div><h1>${x} left 4</h1></div>`)
-    x++
-}
+// let x = 0;
+// while (x < 20) {
+//     document.write(`<div><h1>${x} left 4</h1></div>`)
+//     x++
+// }
 //-----------------------------------------------------------------------------------------------------------------
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
@@ -132,18 +131,17 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 for (let user of users) {
- if (user.status) {
-     document.write(`<div>
+    if (user.status) {
+        document.write(`<div>
      <h3>
          ${user.name}
      </h3>
-<ul>
-     <li>${user.age}</li>
-     <li>${user.status}</li>
+     <ul>
+          <li>${user.age}</li>
+          <li>${user.status}</li>
      </ul>
-
 </div>`)
- }
+    }
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -154,9 +152,9 @@ for (let user of users) {
      <h3>
          ${user.name}
      </h3>
-<ul>
-     <li>${user.age}</li>
-     <li>${user.status}</li>
+     <ul>
+          <li>${user.age}</li>
+          <li>${user.status}</li>
      </ul>
 
 </div>`)
@@ -172,11 +170,10 @@ for (let user of users) {
      <h3>
          ${user.name}
      </h3>
-<ul>
-     <li>${user.age}</li>
-     <li>${user.status}</li>
+     <ul>
+          <li>${user.age}</li>
+          <li>${user.status}</li>
      </ul>
-
 </div>`)
     }
 }
