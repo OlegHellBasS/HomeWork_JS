@@ -214,27 +214,47 @@
 
 //-----------------------------------------------------------------------------------------------------------------
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
-// let books = [{
-//         title: 'Last wish',
-//         pageCount: 640,
-//         after: 'Andrzej Sapkowski',
-//         genre: ['Fantasy','adventure novel']
-//     },
-//     {
-//         title: 'The sword of destiny',
-//         pageCount: 384,
-//         after: ['Andrzej','Sapkowski'],
-//         genre: 'Fantasy'
-//     },
-//     {
-//         title: 'Elven blood',
-//         pageCount: 480,
-//         after: 'Andrzej Sapkowski',
-//         genre: 'Fantasy'
-//     }]
+let books = [{
+        title: 'Last wish',
+        pageCount: 640,
+        after: 'Andrzej Sapkowski',
+        genre: ['Fantasy','adventure novel']
+    },
+    {
+        title: 'The sword of destiny',
+        pageCount: 384,
+        after: ['Andrzej','Sapkowski'],
+        genre: 'Fantasy'
+    },
+    {
+        title: 'Elven blood',
+        pageCount: 480,
+        after: 'Andrzej Sapkowski',
+        genre: 'Fantasy'
+    }]
 // console.log(books)
 // -знайти наібльшу книжку.
+// let cpageCount = books[0];
+// for (let book of books) {
+//     if (book.pageCount > cpageCount.pageCount){
+//         cpageCount = book;
+//     }
+// }console.log(cpageCount)
 // - знайти книжку/ки з найбільшою кількістю жанрів
+// let cgenre = books[0]
+// for (let book of books) {
+//    if (book.genre > cgenre.genre) {
+//        cgenre = book;
+//    }
+// }console.log(cgenre)
 // - знайти книжку/ки з найдовшою назвою
+// let ctitle = books[0]
+// for (let book of books){
+//     if (book.title > cgenre.title){
+//         ctitle = book
+//     }
+// }console.log(ctitle)
 // - знайти книжку/ки які писали 2 автори
+let cafter = books[0]
+
 // - знайти книжку/ки які писав 1 автор
