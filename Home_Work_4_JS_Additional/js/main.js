@@ -156,47 +156,83 @@
 //------------------------------------------------------------------------------------------------------------------
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
 // Вивести в консоль всі його елементи в циклі.
-let arr_5 = [];
-arr_5 [0] = true;
-arr_5 [1] = 'stop';
-arr_5 [2] = 6;
-arr_5 [3] = 5;
-arr_5 [4] = 'play';
-arr_5 [5] = false;
-arr_5 [6] = 9
-arr_5 [7] = 55
-arr_5 [8] = 'helo'
-arr_5 [9] = 99
-for (const arr5Element of arr_5) {
-    console.log(arr5Element)
-}
+// let arr_5 = [];
+// arr_5 [0] = true;
+// arr_5 [1] = 'stop';
+// arr_5 [2] = 6;
+// arr_5 [3] = 5;
+// arr_5 [4] = 'play';
+// arr_5 [5] = false;
+// arr_5 [6] = 9
+// arr_5 [7] = 55
+// arr_5 [8] = 'helo'
+// arr_5 [9] = 99
+// for (const arr5Element of arr_5) {
+//     console.log(arr5Element)
+// }
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+// for (let ta = 0; ta < 10; ta++) {
+//     document.write('крок  ')
+//     console.log('крок',ta)
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+
+// for (let tb = 0; tb < 100; tb++) {
+//     document.write('крок  ')
+//     console.log('крок',tb)
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+
+// for (let tc = 0; tc < 100; tc+=2) {
+//     document.write('крок  ')
+//     console.log('крок',tc)
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+
+// for (let td = 0; td < 100; td++) {
+//     if (td % 2 === 0){
+//     console.log('крок',td);
+//     document.write(`крок  `)}
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
+// for (let tc = 0; tc < 100; tc++) {
+//     if (tc % 2 === 1){
+//     console.log('крок',tc);
+//     document.write(`крок  `)}
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
-let books = [{
-        title: 'Last wish',
-        pageCount: 640,
-        after: 'Andrzej Sapkowski',
-        genre: ['Fantasy','adventure novel']
-    },
-    {
-        title: 'The sword of destiny',
-        pageCount: 384,
-        after: ['Andrzej','Sapkowski'],
-        genre: 'Fantasy'
-    },
-    {
-        title: 'Elven blood',
-        pageCount: 480,
-        after: 'Andrzej Sapkowski',
-        genre: 'Fantasy'
-    }]
-console.log(books)
+// let books = [{
+//         title: 'Last wish',
+//         pageCount: 640,
+//         after: 'Andrzej Sapkowski',
+//         genre: ['Fantasy','adventure novel']
+//     },
+//     {
+//         title: 'The sword of destiny',
+//         pageCount: 384,
+//         after: ['Andrzej','Sapkowski'],
+//         genre: 'Fantasy'
+//     },
+//     {
+//         title: 'Elven blood',
+//         pageCount: 480,
+//         after: 'Andrzej Sapkowski',
+//         genre: 'Fantasy'
+//     }]
+// console.log(books)
 // -знайти наібльшу книжку.
 // - знайти книжку/ки з найбільшою кількістю жанрів
 // - знайти книжку/ки з найдовшою назвою
