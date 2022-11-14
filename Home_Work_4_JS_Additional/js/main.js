@@ -150,9 +150,25 @@
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 //------------------------------------------------------------------------------------------------------------------
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-// - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+ let arr_numstr = [true,9, 7,'stop', 6,10, 5, 'play',8, false];
+// - Створити масив з 10 елементів числового, стірчкового і булевого типу.
+// За допомогою if та typeof вивести тільки булеві елементи
+for (let NumstrElement of arr_numstr) {
+    if (typeof NumstrElement === 'boolean')
+        console.log(NumstrElement)
+}
+// - Створити масив з 10 елементів числового, стірчкового і булевого типу.
+// За допомогою if та typeof вивести тільки числові елементи
+for (let arrNumstrElement of arr_numstr) {
+    if (typeof arrNumstrElement === "number")
+        console.log(arrNumstrElement)
+}
+// - Створити масив з 10 елементів числового, стрічкового і булевого типу.
+// За допомогою if та typeof вивести тільки рядкові елементи
+for (let arrElement of arr_numstr) {
+    if (typeof arrElement === "string")
+        console.log(arrElement)
+}
 //------------------------------------------------------------------------------------------------------------------
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
 // Вивести в консоль всі його елементи в циклі.
@@ -215,68 +231,68 @@
 //-----------------------------------------------------------------------------------------------------------------
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
-let books = [{
-        title: 'Last wish',
-        pageCount: 640,
-        after: ['Andrzej Sapkowski'],
-        genre: ['Fantasy','adventure novel']
-    },
-    {
-        title: 'The sword of destiny',
-        pageCount: 384,
-        after: ['Andrzej','Sapkowski'],
-        genre: 'Fantasy'
-    },
-    {
-        title: 'Elven blood',
-        pageCount: 480,
-        after: ['Andrzej Sapkowski'],
-        genre: 'Fantasy'
-    }]
+// let books = [{
+//         title: 'Last wish',
+//         pageCount: 640,
+//         after: ['Andrzej Sapkowski'],
+//         genre: ['Fantasy','adventure novel']
+//     },
+//     {
+//         title: 'The sword of destiny',
+//         pageCount: 384,
+//         after: ['Andrzej','Sapkowski'],
+//         genre: 'Fantasy'
+//     },
+//     {
+//         title: 'Elven blood',
+//         pageCount: 480,
+//         after: ['Andrzej Sapkowski'],
+//         genre: 'Fantasy'
+//     }]
 // -знайти наібльшу книжку.
-let cpageCount = books[0];
-for (let book of books) {
-    if (book.pageCount > cpageCount.pageCount){
-        cpageCount = book;
-    }
-}console.log(cpageCount)
+// let cpageCount = books[0];
+// for (let book of books) {
+//     if (book.pageCount > cpageCount.pageCount){
+//         cpageCount = book;
+//     }
+// }console.log(cpageCount)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки з найбільшою кількістю жанрів
 
-let cgenre = books[0]
-for (let book of books) {
-   if (book.genre > cgenre.genre) {
-       cgenre = book;
-   }
-}console.log(cgenre)
+// let cgenre = books[0]
+// for (let book of books) {
+//    if (book.genre > cgenre.genre) {
+//        cgenre = book;
+//    }
+// }console.log(cgenre)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки з найдовшою назвою
 
-let ctitle = books[0]
-for (let book of books){
-    if (book.title > cgenre.title){
-        ctitle = book
-    }
-}console.log(ctitle)
+// let ctitle = books[0]
+// for (let book of books){
+//     if (book.title > cgenre.title){
+//         ctitle = book
+//     }
+// }console.log(ctitle)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки які писали 2 автори
 
-let cafter = books[0]
-for (let book of books) {
-    if (book.after > cafter.after)
-        cafter = book
-}console.log(cafter)
+// let cafter = books[0]
+// for (let book of books) {
+//     if (book.after > cafter.after)
+//         cafter = book
+// }console.log(cafter)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки які писав 1 автор
 
-for (let book of books) {
-    if (book.after.length === 1){
-        console.log(book)
-    }
-}
+// for (let book of books) {
+//     if (book.after.length === 1){
+//         console.log(book)
+//     }
+// }
 
 //-----------------------------------------------------------------------------------------------------------------
