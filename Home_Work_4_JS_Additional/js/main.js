@@ -143,7 +143,7 @@ for (let j = 0; j < arr_2.length; j++) {
 }
 
 //-------------------------------------------------------------------------------------------------------------------
-// 7. замінити кожне число кратне 3 на слово "okten"
+// 7. замінити кожне число кратне 3 на слово "okten"  але в зворотньому циклі (с заду на перед)
 for (let ja = arr_2.length -1; ja >= 0 ; ja--) {
 if (arr_2[ja] % 3===0) {
     arr_2[ja] = "okten"
@@ -154,164 +154,182 @@ if (arr_2[ja] % 3===0) {
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 //-------------------------------------------------------------------------------------------------------------------
 // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+
 let arr_n = [1,9, 7,4, 6,10, 5,3,8,2];
 for (let number of arr_n) {
     console.log(number)
 }
+//-------------------------------------------------------------------------------------------------------------------
 // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+
 let arr_s = ['helo','vasia', 'zero','stop', 'fif','big', 'dragon', 'play','hot', 'digital'];
 for (let strg of arr_s) {
     console.log(strg)
 }
+
+//-------------------------------------------------------------------------------------------------------------------
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+
 let arrnes = [true,9, 7,'stop', 6,10, 5, 'play',8, false]
 for (let arrNE of arrnes) {
     console.log(arrNE)
 }
+
 //------------------------------------------------------------------------------------------------------------------
-//  let arr_numstr = [true,9, 7,'stop', 6,10, 5, 'play',8, false];
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу.
+let arr_numstr = [true,9, 7,'stop', 6,10, 5, 'play',8, false];
+
+//------------------------------------------------------------------------------------------------------------------
 // За допомогою if та typeof вивести тільки булеві елементи
-// for (let NumstrElement of arr_numstr) {
-//     if (typeof NumstrElement === 'boolean')
-//         console.log(NumstrElement)
-// }
+for (let NumstrElement of arr_numstr) {
+    if (typeof NumstrElement === 'boolean')
+        console.log(NumstrElement)
+}
+
+//------------------------------------------------------------------------------------------------------------------
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу.
 // За допомогою if та typeof вивести тільки числові елементи
-// for (let arrNumstrElement of arr_numstr) {
-//     if (typeof arrNumstrElement === "number")
-//         console.log(arrNumstrElement)
-// }
+for (let arrNumstrElement of arr_numstr) {
+    if (typeof arrNumstrElement === "number")
+        console.log(arrNumstrElement)
+}
+
+//------------------------------------------------------------------------------------------------------------------
 // - Створити масив з 10 елементів числового, стрічкового і булевого типу.
 // За допомогою if та typeof вивести тільки рядкові елементи
-// for (let arrElement of arr_numstr) {
-//     if (typeof arrElement === "string")
-//         console.log(arrElement)
-// }
+for (let arrElement of arr_numstr) {
+    if (typeof arrElement === "string")
+        console.log(arrElement)
+}
+
 //------------------------------------------------------------------------------------------------------------------
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
 // Вивести в консоль всі його елементи в циклі.
-// let arr_5 = [];
-// arr_5 [0] = true;
-// arr_5 [1] = 'stop';
-// arr_5 [2] = 6;
-// arr_5 [3] = 5;
-// arr_5 [4] = 'play';
-// arr_5 [5] = false;
-// arr_5 [6] = 9
-// arr_5 [7] = 55
-// arr_5 [8] = 'helo'
-// arr_5 [9] = 99
-// for (const arr5Element of arr_5) {
-//     console.log(arr5Element)
-// }
+
+let arr_5 = [];
+arr_5 [0] = true;
+arr_5 [1] = 'stop';
+arr_5 [2] = 6;
+arr_5 [3] = 5;
+arr_5 [4] = 'play';
+arr_5 [5] = false;
+arr_5 [6] = 9
+arr_5 [7] = 55
+arr_5 [8] = 'helo'
+arr_5 [9] = 99
+for (const arr5Element of arr_5) {
+    console.log(arr5Element)
+}
+
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
-// for (let ta = 0; ta < 10; ta++) {
-//     document.write('крок  ')
-//     console.log('крок',ta)
-// }
+for (let ta = 0; ta < 10; ta++) {
+    document.write('крок  ')
+    console.log('крок',ta)
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
-// for (let tb = 0; tb < 100; tb++) {
-//     document.write('крок  ')
-//     console.log('крок',tb)
-// }
+for (let tb = 0; tb < 100; tb++) {
+    document.write('крок  ')
+    console.log('крок',tb)
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 
-// for (let tc = 0; tc < 100; tc+=2) {
-//     document.write('крок  ')
-//     console.log('крок',tc)
-// }
+for (let tc = 0; tc < 100; tc+=2) {
+    document.write('крок  ')
+    console.log('крок',tc)
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 
-// for (let td = 0; td < 100; td++) {
-//     if (td % 2 === 0){
-//     console.log('крок',td);
-//     document.write(`крок  `)}
-// }
+for (let td = 0; td < 100; td++) {
+    if (td % 2 === 0){
+    console.log('крок',td);
+    document.write(`крок  `)}
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
-// for (let tc = 0; tc < 100; tc++) {
-//     if (tc % 2 === 1){
-//     console.log('крок',tc);
-//     document.write(`крок  `)}
-// }
+for (let tc = 0; tc < 100; tc++) {
+    if (tc % 2 === 1){
+    console.log('крок',tc);
+    document.write(`крок  `)}
+}
 
 //-----------------------------------------------------------------------------------------------------------------
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
-// let books = [{
-//         title: 'Last wish',
-//         pageCount: 640,
-//         after: ['Andrzej Sapkowski'],
-//         genre: ['Fantasy','adventure novel']
-//     },
-//     {
-//         title: 'The sword of destiny',
-//         pageCount: 384,
-//         after: ['Andrzej','Sapkowski'],
-//         genre: 'Fantasy'
-//     },
-//     {
-//         title: 'Elven blood',
-//         pageCount: 480,
-//         after: ['Andrzej Sapkowski'],
-//         genre: 'Fantasy'
-//     }]
+let books = [{
+        title: 'Last wish',
+        pageCount: 640,
+        after: ['Andrzej Sapkowski'],
+        genre: ['Fantasy','adventure novel']
+    },
+    {
+        title: 'The sword of destiny',
+        pageCount: 384,
+        after: ['Andrzej','Sapkowski'],
+        genre: 'Fantasy'
+    },
+    {
+        title: 'Elven blood',
+        pageCount: 480,
+        after: ['Andrzej Sapkowski'],
+        genre: 'Fantasy'
+    }]
+//-----------------------------------------------------------------------------------------------------------------
 // -знайти наібльшу книжку.
-// let cpageCount = books[0];
-// for (let book of books) {
-//     if (book.pageCount > cpageCount.pageCount){
-//         cpageCount = book;
-//     }
-// }console.log(cpageCount)
+
+let cpageCount = books[0];
+for (let book of books) {
+    if (book.pageCount > cpageCount.pageCount){
+        cpageCount = book;
+    }
+}console.log(cpageCount)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки з найбільшою кількістю жанрів
 
-// let cgenre = books[0]
-// for (let book of books) {
-//    if (book.genre > cgenre.genre) {
-//        cgenre = book;
-//    }
-// }console.log(cgenre)
+let cgenre = books[0]
+for (let book of books) {
+   if (book.genre > cgenre.genre) {
+       cgenre = book;
+   }
+}console.log(cgenre)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки з найдовшою назвою
 
-// let ctitle = books[0]
-// for (let book of books){
-//     if (book.title > cgenre.title){
-//         ctitle = book
-//     }
-// }console.log(ctitle)
+let ctitle = books[0]
+for (let book of books){
+    if (book.title > cgenre.title){
+        ctitle = book
+    }
+}console.log(ctitle)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки які писали 2 автори
 
-// let cafter = books[0]
-// for (let book of books) {
-//     if (book.after > cafter.after)
-//         cafter = book
-// }console.log(cafter)
+let cafter = books[0]
+for (let book of books) {
+    if (book.after > cafter.after)
+        cafter = book
+}console.log(cafter)
 
 //-----------------------------------------------------------------------------------------------------------------
 // - знайти книжку/ки які писав 1 автор
 
-// for (let book of books) {
-//     if (book.after.length === 1){
-//         console.log(book)
-//     }
-// }
+for (let book of books) {
+    if (book.after.length === 1){
+        console.log(book)
+    }
+}
 
 //-----------------------------------------------------------------------------------------------------------------
