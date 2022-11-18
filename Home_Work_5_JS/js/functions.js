@@ -121,13 +121,24 @@ function arr_min_num(arr) {
         if (min_num > arrNum) {
             min_num = arrNum
         }
-    }return min_num
+    }
+    return min_num
 
 }
+
 let x = arr_min_num(arr_2);
 console.log(x)
 
 //--------------------------------------------------------------------------------------------------------------------
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
+let arr_num = [1, 2, 10]
+function arr_item_plus(arr){
+    let num = 0;
+    for (const numElement of arr) {
+        num += numElement
+    }return num
+}
+let n = arr_item_plus(arr_num)
+console.log(n)
 //--------------------------------------------------------------------------------------------------------------------
