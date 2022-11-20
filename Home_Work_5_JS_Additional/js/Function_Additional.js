@@ -56,8 +56,8 @@ function max_and_min_num (...num){
     let min = arguments[0];
     let max = arguments[0];
     for (const numElement of num) {
-        if (numElement > min){
-            min = numElement
+        if (numElement > max){
+            max = numElement
         }
         if (numElement < min){
             min = numElement
@@ -71,6 +71,15 @@ console.log(num)
 //-------------------------------------------------------------------------------------------------------------------
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+let arr_num_r = [];
+function arr_random_num (){
+    let arr = [];
+    for ( let i = 0; i < 10; i++ ) {
+        arr.push(Math.round( Math.random() * 100 ));
+    }
+    console.log(arr);
+    }
+arr_random_num(arr_num_r)
 //-------------------------------------------------------------------------------------------------------------------
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit.
 // limit - аргумент, який характеризує кінцеве значення діапазону.
