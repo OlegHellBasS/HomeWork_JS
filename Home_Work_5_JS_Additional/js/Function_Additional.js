@@ -157,3 +157,16 @@ console.log(u_arr_o(user_arr));
 //     - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+function u_arr_u(arr) {
+    const user_ob = []
+    for (const arrElement of arr) {
+        for (const key in arrElement) {
+            user_ob[user_ob.length] = arrElement[key]
+        }
+    }
+    return user_ob
+}
+
+console.log(u_arr_u(user_arr));
+
+//-------------------------------------------------------------------------------------------------------------------
