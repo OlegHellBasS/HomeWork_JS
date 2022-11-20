@@ -52,10 +52,10 @@ console.log(arr_centr_num(arr_2))
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
 // а виводить найбільше (Math використовувати заборонено);
 
-function max_and_min_num (...arguments){
+function max_and_min_num (...num){
     let min = arguments[0];
     let max = arguments[0];
-    for (const numElement of arguments) {
+    for (const numElement of num) {
         if (numElement > min){
             min = numElement
         }
