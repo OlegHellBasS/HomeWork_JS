@@ -38,17 +38,62 @@ class Client {
     }
 }
 // створити пустий масив, наповнити його 10 об'єктами Client
+clients = [
+    new Client(1,'Margot', 'Robbie', 'margotr@gmail.com', 6139866,['Film','Television','Music videos']),
+    new Client(2,'Arnold', 'Schwarzenegger', 'arnolds@state.ca.gov', 3965917,['Film','Television','Commercials','Music videos']),
+    new Client(3,'Henry', 'Cavill', 'Mr.Cavill@henry-cavill.net', 9321115,['Film','Television']),
+    new Client(4,'Freya', 'Allan', 'freyaallan241@gmail.com', 2525852,['Television']),
+    new Client(5,'Anya', 'Chalotra', 'anyachalotra@gmail.com', 35353566,['Television']),
+    new Client(6,'Joseph', 'Batey', 'joeybatey@gmail.com', 4242412,['Television','Music videos']),
+    new Client(7,'MyAnna', 'Buring', ' myannaburing@gmail.com', 55556648,['Film','Television','Music videos','Books']),
+    new Client(8,'Anna', 'Shaffer', 'annashaffer@gmail.com', 45464646,['Film','Television']),
+    new Client(9,'Emma', 'Appleton', 'emmaappleton@gmail.com', 45464645,['Television']),
+    new Client(10,'Rebecca', 'Hansen', 'rebeccahansen@gmail.com', 463456465,['Television'])
+];
+console.log(clients)
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
-//
-//
-// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+console.log(clients.sort((a, b) => a.order.length - b.order.length));
+// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
+// максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-//
-//
+function Car (model,producer,year,max_speed,engine_capacity){
+    this.model = model
+    this.producer = producer
+    this.year = year
+    this.max_speed = max_speed
+    this.engine_capacity = engine_capacity
+
+    this.drive = function () {
+        console.log(`їдемо зі швидкістю ${max_speed} на годину`)
+    }
+
+    this.info = function () {
+        console.log(this.model,this.producer,this.year,this.max_speed,this.engine_capacity)
+    }
+
+    this.increaseMaxSpeed = function (newSpeed) {
+        this.max_speed += newSpeed
+    }
+
+    this.changeYear = function (newValue) {
+        this.year = newValue
+    }
+
+    this.addDriver = function (driver) {
+        this.driver = driver
+    }
+}
+let car = new Car('Porsche 356','Porsche GmbH',1948,140,'1.1 L B4, 40 hp (DIN)')
+
+car.drive()
+car.info()
+car.increaseMaxSpeed(140)
+car.changeYear(1965)
+car.addDriver('Spidi')
 // - (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
