@@ -115,23 +115,23 @@ class Car_2 {
         this.max_speed = max_speed;
         this.engine_capacity = engine_capacity;
     }
-    drive = function () {
+    drive () {
         console.log(`їдемо зі швидкістю ${this.max_speed} на годину`)
     }
 
-    info = function () {
+    info () {
         console.log(this.model,this.producer,this.year,this.max_speed,this.engine_capacity)
     }
 
-    increaseMaxSpeed = function (newSpeed) {
+    increaseMaxSpeed (newSpeed) {
         this.max_speed += newSpeed
     }
 
-    changeYear = function (newValue) {
+    changeYear (newValue) {
         this.year = newValue
     }
 
-    addDriver = function (driver) {
+    addDriver (driver) {
         this.driver = driver
     }
 }
